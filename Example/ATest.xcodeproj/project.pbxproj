@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		252A34D40988255B20D0270F /* Pods-ATest_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATest_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ATest_Tests/Pods-ATest_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		2DE33629F10F160B5AE9C280 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		2DE33629F10F160B5AE9C280 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		2FC469F18F787A4CC190C130 /* Pods_ATest_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ATest_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A6A8D878CC7A67E989F1588 /* Pods-ATest_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATest_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ATest_Tests/Pods-ATest_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ATest_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATest_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,9 +64,9 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76954FC51BE2E7A3E22FA382 /* Pods-ATest_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATest_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ATest_Example/Pods-ATest_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AAC1B460638A27CA2FA2F940 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		AAC1B460638A27CA2FA2F940 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B09EBC652DF5F97626F50589 /* Pods-ATest_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ATest_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ATest_Example/Pods-ATest_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C1101F4D6D1254943278CBA8 /* ATest.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ATest.podspec; path = ../ATest.podspec; sourceTree = "<group>"; };
+		C1101F4D6D1254943278CBA8 /* ATest.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ATest.podspec; path = ../ATest.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,11 +143,10 @@
 		6003F593195388D20070C39A /* Example for ATest */ = {
 			isa = PBXGroup;
 			children = (
+				A85889DB1FF0CB0B008A50E1 /* ATest */,
 				6003F59C195388D20070C39A /* AAppDelegate.h */,
 				6003F59D195388D20070C39A /* AAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* AViewController.h */,
-				6003F5A6195388D20070C39A /* AViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -194,6 +193,32 @@
 				AAC1B460638A27CA2FA2F940 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		A85889DB1FF0CB0B008A50E1 /* ATest */ = {
+			isa = PBXGroup;
+			children = (
+				A85889DC1FF0CB0B008A50E1 /* Assets */,
+				A85889DE1FF0CB0B008A50E1 /* Classes */,
+			);
+			name = ATest;
+			path = ../../ATest;
+			sourceTree = "<group>";
+		};
+		A85889DC1FF0CB0B008A50E1 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		A85889DE1FF0CB0B008A50E1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6003F5A5195388D20070C39A /* AViewController.h */,
+				6003F5A6195388D20070C39A /* AViewController.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
