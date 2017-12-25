@@ -6,10 +6,10 @@
 //  Copyright © 2017年 qq83659105. All rights reserved.
 //
 
-#import "Target_A.h"
+#import "Target_ATest.h"
 #import "AViewController.h"
 
-@implementation Target_A
+@implementation Target_ATest
 
 - (UIViewController *)Action_viewController:(NSDictionary *)params
 {

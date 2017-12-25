@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Target_A : NSObject
+@interface Target_ATest : NSObject
 - (UIViewController *)Action_viewController:(NSDictionary *)params;
 @end
