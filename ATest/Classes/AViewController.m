@@ -16,7 +16,8 @@
 
 - (void)viewDidLoad
 {
-    
+ 
+    self.view.backgroundColor = [UIColor whiteColor];
     UIButton * btn = [UIButton buttonWithType:UIButtonTypeSystem];
     btn.frame = CGRectMake(0, 0, 300, 100);
     [btn setTitle:@"Open BTEST VC" forState:UIControlStateNormal];
