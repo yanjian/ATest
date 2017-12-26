@@ -1,22 +1,28 @@
 {
   "name": "ATest",
-  "version": "0.1.0",
-  "summary": "A short description of ATest.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/qq83659105/ATest",
+  "version": "0.1.3",
+  "summary": "A of ATest.",
+  "description": "homePage-> https://github.com/yanjian/ATest",
+  "homepage": "https://github.com/yanjian/ATest",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "qq83659105": "qq83659105@163.com"
+    "yanjaya": "qq83659105@163.com"
   },
   "source": {
-    "git": "https://github.com/qq83659105/ATest.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/yanjian/ATest.git",
+    "tag": "0.1.3"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "ATest/Classes/**/*"
+  "source_files": "ATest/Classes/**/*",
+  "requires_arc": true,
+  "dependencies": {
+    "BTest_Categoty": [
+
+    ]
+  }
 }

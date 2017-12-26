@@ -1,14 +1,10 @@
 use_frameworks!
 
+source  'https://github.com/yanjian/PrivatePods.git'
+source  'https://github.com/CocoaPods/Specs.git' #官方的资源 ---- 默认行为...
+
 target 'ATest_Example' do
   pod 'ATest', :path => '../'
-
-  target 'ATest_Tests' do
-    inherit! :search_paths
-
-    pod 'Specta'
-  pod 'Expecta'
-  pod 'FBSnapshotTestCase'
-  pod 'Expecta+Snapshots'
-  end
+  pod 'BTest_Categoty'
+  
 end

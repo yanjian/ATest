@@ -10,9 +10,8 @@
 #endif
 #endif
 
-#import "AViewController.h"
-#import "Target_ATest.h"
+#import "CTMediator+BTest.h"
 
-FOUNDATION_EXPORT double ATestVersionNumber;
-FOUNDATION_EXPORT const unsigned char ATestVersionString[];
+FOUNDATION_EXPORT double BTest_CategotyVersionNumber;
+FOUNDATION_EXPORT const unsigned char BTest_CategotyVersionString[];
 

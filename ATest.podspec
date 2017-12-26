@@ -31,12 +31,15 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'ATest/Classes/**/*'
-  
+
+  s.requires_arc = true
+
+
   # s.resource_bundles = {
   #   'ATest' => ['ATest/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+    s.dependency 'BTest_Categoty'
 end

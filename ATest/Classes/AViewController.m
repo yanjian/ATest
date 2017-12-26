@@ -7,7 +7,7 @@
 //
 
 #import "AViewController.h"
-
+#import <BTest_Categoty/CTMediator+BTest.h>
 @interface AViewController ()
 
 @end
@@ -16,9 +16,19 @@
 
 - (void)viewDidLoad
 {
-    self.view.backgroundColor = [UIColor redColor];
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor blueColor];
+    UIButton * btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = CGRectMake(0, 0, 100, 100);
+    [btn setTitle:@"BTEST" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    btn.center = self.view.center ;
+    [btn addTarget:self action:@selector(testEvent) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    
+}
+
+-(void)testEvent{
+    [self presentViewController:[[CTMediator sharedInstance] bTest_ViewControllerWithContextText:@"B"] animated:YES  completion:nil] ;
 }
 
 - (void)didReceiveMemoryWarning
