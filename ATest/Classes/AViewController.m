@@ -16,11 +16,11 @@
 
 - (void)viewDidLoad
 {
-    self.view.backgroundColor = [UIColor blueColor];
-    UIButton * btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.frame = CGRectMake(0, 0, 100, 100);
-    [btn setTitle:@"BTEST" forState:UIControlStateNormal];
-    [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    
+    UIButton * btn = [UIButton buttonWithType:UIButtonTypeSystem];
+    btn.frame = CGRectMake(0, 0, 300, 100);
+    [btn setTitle:@"Open BTEST VC" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     btn.center = self.view.center ;
     [btn addTarget:self action:@selector(testEvent) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
@@ -28,7 +28,7 @@
 }
 
 -(void)testEvent{
-    [self presentViewController:[[CTMediator sharedInstance] bTest_ViewControllerWithContextText:@"B"] animated:YES  completion:nil] ;
+    [self presentViewController:[[CTMediator sharedInstance] bTest_ViewControllerWithContextText:@"BTEST View"] animated:YES  completion:nil] ;
 }
 
 - (void)didReceiveMemoryWarning
